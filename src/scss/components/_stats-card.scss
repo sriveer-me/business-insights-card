@@ -1,0 +1,56 @@
+.stats-card{
+    width: 30rem;
+    background-color: $color-black-2;
+    border-radius: .5rem;
+    overflow: hidden;
+
+    &__picture{
+        display: flex;
+        background-color: $color-primary;
+    }
+
+    &__image{
+        display: inline-block;
+        width: 100%;       
+        mix-blend-mode: multiply;
+    }
+
+    &__text-box{
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        color: $color-white-1;
+        padding: 2rem;
+    }
+
+    &__heading-primary{
+        font-size: 2.8rem;
+        // margin: 2rem 0;
+    }
+
+    &__body-text{
+        color: rgba($color-white-2,0.6);
+        font-size: 1.5rem;
+        line-height: 2.8rem;
+    }
+
+    &__stats-box{
+        margin: 3rem 0;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    // &__stat{
+
+    // }
+
+    &__heading-secondary{
+        margin-top: 1rem;
+
+        color: rgba($color-white-2,0.6);
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+    }
+}
