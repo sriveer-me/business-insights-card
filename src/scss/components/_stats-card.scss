@@ -1,12 +1,24 @@
 .stats-card{
     width: 30rem;
     background-color: $color-black-2;
-    border-radius: .5rem;
+    border-radius: 1rem;
     overflow: hidden;
+
+    @include for-desktop-up{
+        width: 120rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     &__picture{
         display: flex;
         background-color: $color-primary;
+
+        @include for-desktop-up{
+            flex: 0 0 50%;
+            order: 2;
+        }
     }
 
     &__image{
@@ -20,30 +32,54 @@
         text-align: center;
         color: $color-white-1;
         padding: 2rem;
+
+        @include for-desktop-up{
+            text-align: left;
+            padding: 0 6rem;
+            padding-right: 10rem;
+        }
     }
 
     &__heading-primary{
         font-size: 2.8rem;
-        // margin: 2rem 0;
+
+        @include for-desktop-up{
+            font-size: 4.0rem;
+        }
     }
 
     &__body-text{
         color: rgba($color-white-2,0.6);
         font-size: 1.5rem;
         line-height: 2.8rem;
+
+        @include for-desktop-up{
+            line-height: 2.4rem;
+        }
     }
 
     &__stats-box{
         margin: 3rem 0;
+        @include for-desktop-up{
+            margin-top: 8rem;
+        }
 
         display: flex;
         flex-direction: column;
         row-gap: 3rem;
+
+        @include for-desktop-up{
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
-    // &__stat{
-
-    // }
+    &__stat{
+        text-align: center;
+        .stats-card__heading-primary{
+            font-size: 2.8rem;
+        }
+    }
 
     &__heading-secondary{
         margin-top: 1rem;

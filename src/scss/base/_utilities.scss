@@ -8,4 +8,8 @@
 
 .u-margin-bottom-medium{
     margin-bottom: 2rem;
+
+    @include for-desktop-up{
+        margin-bottom: 3rem;
+    }
 }
